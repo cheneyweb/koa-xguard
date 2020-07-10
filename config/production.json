@@ -1,0 +1,18 @@
+{
+    "log": {
+        "level": "info"
+    },
+    "server": {
+        "port": 3636
+    },
+    "guard": {
+        "key": {
+            "default": "ip",
+            "/admin/*": "ip,id"
+        },
+        "api": {
+            "default": "1/s",
+            "/test/*": "5/m/b"
+        }
+    }
+}
